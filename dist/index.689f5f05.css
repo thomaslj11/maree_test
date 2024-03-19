@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  --font-inter: Inter;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --color-white: #fff;
+  --color-gray-100: #00000080;
+  --gap-sm: 14px;
+  --padding-mid: 17px;
+  --padding-sm: 14px;
+  --padding-19xl: 38px;
+  --padding-23xl: 42px;
+  --padding-9xs: 4px;
+}
+/*# sourceMappingURL=index.689f5f05.css.map */

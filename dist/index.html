@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+
+    <link rel="stylesheet" href="/index.689f5f05.css">
+    <link rel="stylesheet" href="/index.9e4c6fd2.css" <link="">
+  </head>
+  <body>
+    <div class="iphone-13-14-1">
+      <main class="parent-frame">
+        <div class="wrapper-drone-mur-de-galet-1">
+          <img class="drone-mur-de-galet-1-icon" alt="mur de galet" src="/drone-mur-de-galet-1@2x.517e9d03.png">
+        </div>
+        <section class="parent-frame-child"></section>
+      </main>
+      <div class="mercredi-29-septembre-2024-parent">
+        <b id="currentDate" class="mercredi-29-septembre"></b>
+      </div>
+
+
+      <div class="coefficient-frames">
+        <div class="rectangle-parent">
+          <div class="frame-item"></div>
+          <div class="coefficient-90-container">
+            <span>Coefficient :</span>
+            <b> 90</b>
+          </div>
+          <div class="heure-mare-haute-15h32-wrapper">
+            <div class="heure-mare-haute-container">
+              <span>Heure marée haute : </span>
+              <b id="mareeHaute1">15h32</b>
+            </div>
+          </div>
+          <div class="heure-mare-basse-9h24-wrapper">
+            <div class="heure-mare-basse-container">
+              <span>Heure marée basse :</span>
+              <b id="mareeBasse1">9h24</b>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-group">
+          <div class="frame-inner"></div>
+          <div class="coefficient-90-container1">
+            <span>Coefficient :</span>
+            <b> 90</b>
+          </div>
+          <div class="heure-mare-haute-15h32-container">
+            <div class="heure-mare-haute-container1">
+              <span>Heure marée haute : </span>
+              <b id="mareeHaute2">15h32</b>
+            </div>
+          </div>
+          <div class="heure-mare-basse-9h24-container">
+            <div class="heure-mare-basse-container1">
+              <span>Heure marée basse :</span>
+              <b id="mareeBasse2"> 9h24</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>const date = new Date();
+const f = new Intl.DateTimeFormat("fr-fr", {
+    dateStyle: "full"
+});
+console.log(f.format(date));
+document.getElementById("currentDate").innerHTML = f.format(date);
+
+</script>
+
+  <script>const lat = 48.47;
+const lng = -3.13;
+const APIKEY = "652e13a4-e4cb-11ee-be1e-0242ac130002-652e1426-e4cb-11ee-be1e-0242ac130002";
+fetch(`https://api.stormglass.io/v2/tide/extremes/point?lat=${lat}&lng=${lng}`, {
+    headers: {
+        "Authorization": APIKEY
+    }
+}).then((response)=>response.json()).then((data)=>{
+    console.log(data);
+});
+document.getElementById("mareeHaute1").innerHTML = f.format(date);
+
+</script>
+
+  <script src="/Coz%20Castel%20-%20marée.3464ddca.js"></script></body>
+</html>
